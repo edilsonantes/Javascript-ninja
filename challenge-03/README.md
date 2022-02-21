@@ -64,7 +64,7 @@ Crie um método chamado `nomeCompleto`, que retorne a frase:
 - "Olá! Meu nome é [NOME] [SOBRENOME]!"
 */
 pessoa.nomeCompleto = function(){
-    return 'Olá! Meu nome é ' + pessoa.nome + ' ' + pessoa.sobrenome + '!';
+    return `Olá! Meu nome é ${pessoa.nome} ${pessoa.sobrenome}!`;
 }
 
 /*
@@ -72,7 +72,7 @@ Crie um método chamado `mostrarIdade`, que retorne a frase:
 - "Olá, eu tenho [IDADE] anos!"
 */
 pessoa.mostrarIdade = function(){
-    return 'Olá, eu tenho ' + pessoa.idade + ' anos!';
+    return `Olá, eu tenho ${pessoa.idade} anos!`;
 }
 
 /*
@@ -80,7 +80,7 @@ Crie um método chamado `mostrarPeso`, que retorne a frase:
 - "Eu peso [PESO]Kg."
 */
 pessoa.mostrarPeso = function(){
-    return 'Eu peso ' + pessoa.peso + 'Kg.';
+    return `Eu peso ${pessoa.peso} Kg.`;
 }
 
 /*
@@ -88,7 +88,7 @@ Crie um método chamado `mostrarAltura` que retorne a frase:
 - "Minha altura é [ALTURA]m."
 */
 pessoa.mostrarAltura = function(){
-    return 'Minha altura é ' + pessoa.altura + 'm.';
+    return `Minha altura é ${pessoa.altura} m.`;
 }
 
 /*
@@ -206,7 +206,9 @@ pessoa.apresentacao = function() {
     if (pessoa.caminhouQuantosMetros == 1)
         auxMetros = ' metro!';
 
-    return 'Olá, eu sou' + auxSexo + pessoa.nome + ' ' + pessoa.sobrenome + ', tenho ' + pessoa.idade + auxAnos + ', meu peso é ' + pessoa.peso + ' e, só hoje, eu já caminhei ' + pessoa.caminhouQuantosMetros + auxMetros;
+    return `Olá eu sou ${auxSexo} ${pessoa.nome} ${pessoa.sobrenome} tenho ${pessoa.idade} ${auxAnos} meu peso é ${pessoa.peso} e, só hoje, eu já caminhei ${pessoa.caminhouQuantosMetros} ${auxMetros}`;
+
+    
 
 }
 

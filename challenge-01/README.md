@@ -37,7 +37,10 @@ myvar <= soma;
 
 // Crie uma função chamada `divisao` que receba como parâmetro dois números, e retorne o resultado da divisão entre eles.
 function divisao(x, y){
-    return x / y;
+    if(y !==0){
+        return x / y;
+    }
+    return 'Não é possível dividir por 0.';
 };
 
 // Invoque a função criada acima, passando os parâmetros 10 e 2.

@@ -38,7 +38,7 @@ function showTeamPosition(x){
         return 'Não temos a informação do time que está nessa posição';
     }
     else {
-        return 'o tume que está em ' + x + 'º lugar é o ' + teams[x-1];  
+        return `O time que está em  ${x}º lugar é o ${teams[x-1]}`;  
     }
 }
 
@@ -76,17 +76,17 @@ Crie uma função chamada `convertToHex`, com as seguintes características:
 function convertToHex(cor){
     switch(cor){
         case 'white':
-            return 'O hexadecimal para a cor ' + cor + ' é #ffffff.';   
+            return `O hexadecimal para a cor ${cor} é #FFFFFF.`;   
         case 'black':
-            return 'O hexadecimal para a cor ' + cor + ' é #000000.';
+            return `O hexadecimal para a cor ${cor} é #000000.`;
         case 'red':
-            return 'O hexadecimal para a cor ' + cor + ' é #C40233.';
+            return `O hexadecimal para a cor ${cor} é #C40233.`;;
         case 'blue':
-            return 'O hexadecimal para a cor ' + cor + ' é #87CEEB.';
+            return `O hexadecimal para a cor ${cor} é #87CEEB.`;
         case 'green':
-            return 'O hexadecimal para a cor ' + cor + ' é #77DD77.';
+            return `O hexadecimal para a cor ${cor} é #77DD77.`;
         default:
-            return 'Não temos o equivalente hexadecimal para ' + cor + '.';
+            return `Não temos o equivalente hexadecimal para ${cor}.`;
     }
 }
 

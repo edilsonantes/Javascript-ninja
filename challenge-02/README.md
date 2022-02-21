@@ -24,7 +24,7 @@ Onde VALOR é o novo valor da variável.
 */
 function Valor(){
     novaVariavel += 10;
-    return 'O valor da variável agora é ' + novaVariavel;
+    return `O valor da variável agora é ${novaVariavel}`;
 }
 
 // Invoque a função criada acima.
@@ -41,10 +41,10 @@ Crie uma função com as seguintes características:
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
 function Multiplica(x, y, z){
-    if ((x == undefined) || (y == undefined) || (z == undefined))
-        return 'Preencha todos os valores corretamente!';
-
-    return (x * y * z) + 2;
+    if((!x || !y || !z) && (x !== 0 && y !== 0 && z !== 0)){
+        return console.log('Preencha todos os valores corretamente!');
+    }
+    return x*y*z;
 }
 
 // Invoque a função criada acima, passando só dois números como argumento.
@@ -69,13 +69,13 @@ Crie uma função com as seguintes características:
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
 function Condicao(x, y, z){
-    if ((x != undefined) && (y == undefined) && (z == undefined)){
+    if ((x && !y && !z )){
         return x;
-    } else if ((x != undefined) && (y != undefined) && (z == undefined)){
+    } else if ((x && y && !z)){
         return x+y;
-    } else if ((x != undefined) && (y != undefined) && (z != undefined)){
+    } else if ((x && y && z)){
         return (x+y) / z;
-    } else if ((x == undefined) && (y == undefined) && (z == undefined)){
+    } else if (!x && !y && !z){
         return false;
     } else {
         return null;

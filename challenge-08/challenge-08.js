@@ -15,13 +15,13 @@ o resultado no console, com a frase:
 var x = 2;
 var y = 3;
 
-console.log('A soma de ' + x + ' e ' + y + ' é igual a ' + sum(x,y));
+console.log(`A soma de ${x} e ${y} é igual a ${sum(x,y)}`);
 
 /*
 Mostre no console o nome da função criada acima, com a frase:
 "O nome da função que faz a soma é [NOME DA FUNÇÃO]."
 */
-console.log('O nome da função que faz a soma é ' + sum.name);
+console.log('O nome da função que faz a soma é', sum.name);
 
 /*
 Crie uma função literal chamada `showName`. Essa função deve retornar o
@@ -41,7 +41,7 @@ Usando a variável criada acima, mostre no console o nome e o retorno da funçã
 atribuída a ela, com a seguinte frase:
 "A função [NOME DA FUNÇÃO] retorna [RETORNO DA FUNÇÃO]."
 */
-console.log('A função ' + varShowName.name + ' retorna ' + showName());
+console.log(`A função ${varShowName.name} retorna ${showName()}`);
 
 /*
 Crie uma função literal chamada `calculator`, que funcione assim:
@@ -59,15 +59,15 @@ function calculator(op){
   return function(x,y){
     switch(op){
       case '+':
-        return 'Resultado da operação: ' + x + ' ' + op + ' ' + y + ' = ' + (x+y);
+        return `Resultado da operação: ${x} ${op} ${y} = ${(x+y)}`;
       case '-':
-        return 'Resultado da operação: ' + x + ' ' + op + ' ' + y + ' = ' + (x-y);
+        return `Resultado da operação: ${x} ${op} ${y} = ${(x-y)}`;
       case '/':
-        return 'Resultado da operação: ' + x + ' ' + op + ' ' + y + ' = ' + (x/y);
+        return `Resultado da operação: ${x} ${op} ${y} = ${(x/y)}`;
       case '*':
-        return 'Resultado da operação: ' + x + ' ' + op + ' ' + y + ' = ' + (x*y);
+        return `Resultado da operação: ${x} ${op} ${y} = ${(x*y)}`;
       case '%':
-        return 'Resultado da operação: ' + x + ' ' + op + ' ' + y + ' = ' + (x%y);
+        return `Resultado da operação: ${x} ${op} ${y} = ${(x%y)}`;
       default:
         return 'Operação inválida';
     }
